@@ -1,0 +1,97 @@
+.app-name {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  max-height: 600px;
+  height: 300px;
+
+  padding:40px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 2px; /* Add horizontal margin */
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form input[type="text"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%; /* This will make the input take up the full width of its container */
+  box-sizing: border-box; /* This will include padding and border in the element's total width and height */
+}
+
+.login-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box; /* Make sure this line is properly formatted */
+}
+
+.login-form button:active {
+  background-color: #0056b3;
+}
+
+.login-form button:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.show-password {
+  display: flex;
+  align-items: center; /* Vertically align the checkbox and label */
+  align-self: flex-start;
+  margin-bottom: 15px; /* Add some space before the buttons */
+  font-size: 0.9em; /* Adjust the font size */
+  color: #777; /* Adjust the color */
+}
+
+.show-password input[type="checkbox"] {
+  margin-right: 10px; /* Adjust the space between the checkbox and the label */
+  height: 15px; /* Adjust the size of the checkbox */
+  width: 15px;
+}
+
+@media (max-width: 600px) {
+  .login-form {
+    max-width: 90%; /* Adjust the max width for smaller screens */
+    margin: 0 5%; /* Adjust the margins for smaller screens */
+  }
+
+  .app-name {
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,33 @@
+.calculator-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .result-clear {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .result-clear input {
+    flex: 4;
+    padding: 5px;
+  }
+  
+  .result-clear button {
+    flex: 1;
+    padding: 2px;
+    margin-left: 10px;
+  }
+  
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+  }
+  
+  .keypad button {
+    padding: 15px 20px;
+  }
+  

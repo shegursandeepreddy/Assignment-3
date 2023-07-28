@@ -1,0 +1,25 @@
+/* Stocks.css */
+
+.stock-data {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  .stock-symbol {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .stock-detail {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+
+  .sPage{
+    text-align: center;
+  }
